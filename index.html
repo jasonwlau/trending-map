@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube Trending Map</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel = "stylesheet" href="youtube.css">
+    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Youtube Maps</h1>
+
+    <div class="wrapper">
+
+      <div class="controls">
+        <form>
+          <p>
+            <label for="search">Enter a country: (required): </label>
+            <input type="text" id="search" class="search" required>
+          </p>
+          <p>
+            <button class="submit">Submit</button>
+          </p>
+        </form>
+        <div id="map"></div>
+      </div>
+
+      
+      <div class="results">
+        <h1 id="title">Result</h1>
+        <section>
+        </section>
+        <p>
+          <button class="prev">&lt;&lt;</button>
+          <button class="next">&gt;&gt;</button>
+        </p>
+      </div>
+    </div>
+    
+    <script src="maps.js"></script>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApeIzETh6paiZ1uRS87fl3Hv8562yzfYA&libraries=places&callback=initMap" async defer></script>
+  </body>
+</html>
