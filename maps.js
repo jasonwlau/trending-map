@@ -7,7 +7,7 @@ var prev;
 var vidarray;
 var indx = 0;
 var country;
-var myKey = 'AIzaSyApeIzETh6paiZ1uRS87fl3Hv8562yzfYA';
+var myKey = 'INSERT-API-KEY-HERE';
 var searchTerm = document.querySelector('.search');
 var searchForm = document.querySelector('form');
 var submitBtn = document.querySelector('.submit');
